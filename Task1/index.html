@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="./script.js"></script>
+    <title>Home</title>
+</head>
+
+
+<body>
+
+    <!----Navbar---->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid " style="margin: 0% 10%;">
+            <a class="navbar-brand" href="#">
+                <p class="para"><img src="./Images/zipilogo.png" style="height: 40px; width: 40px;">
+                </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="font-size: 18px;">
+                        <li class="nav-item">
+                            <a class="nav-link active p-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!----crousel---->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/img1.jpg" class="d-block w-100 bg_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="centered" style="font-weight: bolder; font-size: 40px;">
+                        One page promising to fill all
+                        your needs!
+                    </div>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, laboriosam ipsam ab cum
+                        voluptatum sit.
+                    </P>
+                    <div style="text-align: center;"><button class="btn-change">Learn
+                            More</button>
+                        <button class="btn-change" style="background-color: yellow; color: black;">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/img2.jpg" class="d-block w-100 bg_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="centered" style="font-weight: bolder; font-size: 40px;">
+                        One page promising to fill all
+                        your needs!
+                    </div>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, laboriosam ipsam ab cum
+                        voluptatum sit.
+                    </P>
+                    <div style="text-align: center;"><button class="btn-change">Learn
+                            More</button>
+                        <button class="btn-change" style="background-color: yellow; color: black;">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/img3.jpg" class="d-block w-100 bg_img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="centered" style="font-weight: bolder; font-size: 40px;">
+                        One page promising to fill all
+                        your needs!
+                    </div>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, laboriosam ipsam ab cum
+                        voluptatum sit.
+                    </P>
+                    <div style="text-align: center;"><button class="btn-change">Learn
+                            More</button>
+                        <button class="btn-change" style="background-color: yellow; color: black;">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <div class="fluid">
+            <div class="zippyintro">
+                <p><b>Welcome to Zippy</b></p>
+            </div>
+            <div class="title">
+                <table>
+                    <td>
+                        <p>This is photoshop's version of Lorem Lpsum.Proin gravida nibh vel veilt auctor
+                            aliquet.Aenean
+                            solicitudin,lorem quis bibendum auctor.
+                        </p>
+                    </td>
+                    <td> <i class="fas fa-umbrella fa-5x"></i></td>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!----icons---->
+
+    <div class="container">
+        <div style="width:800px; margin:50px auto; padding: 5px;display: flex; justify-content: space-between;">
+            <table>
+                <div>
+                    <td>
+                        <div class="icons"><i class="fas fa-bell fa-3x"></i></div>
+                        <h4 style="text-align: center;">Lorem ipsum</h4>
+                        <div class="icondesc">
+                            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+                                deserunt. Sequi possimus ex sint. </p>
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change">Learn
+                                More</button>
+                        </div>
+                    </td>
+                </div>
+                <div>
+                    <td>
+                        <div class="icons"><i class="fas fa-envelope fa-3x"></i></div>
+                        <h4 style="text-align: center;">dolor sit</h4>
+                        <div class="icondesc">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+                                deserunt. Sequi possimus ex sint. </p>
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change">Learn More</button></div>
+                    </td>
+                </div>
+                <div>
+                    <td>
+                        <div class="icons"><i class="fas fa-book fa-3x"></i></div>
+                        <h4 style="text-align: center;">Consecteture</h4>
+                        <div class="icondesc">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+                                deserunt. Sequi possimus ex sint. </p>
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change">Learn
+                                More</button>
+                        </div>
+                    </td>
+                </div>
+            </table>
+
+        </div>
+    </div>
+    <hr style=" width: 50%;">
+
+    <!----projects---->
+
+    <p class="zippyintro"><b>Projects</b></p>
+    <div class="card-group" style="background-color: rgb(220, 251, 255);">
+        <div class="card">
+            <img src="./Images/project1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Project Name</h5>
+                <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Deleniti,
+                    deserunt. Sequi possimus ex sint.</p>
+                <div style="text-align: center;"><button class="btn-change">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Images/project2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Project Name</h5>
+                <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Deleniti,
+                    deserunt. Sequi possimus ex sint.
+                </p>
+                <div style="text-align: center;" style="text-align: center;"><button class="btn-change">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Images/project3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Project Name</h5>
+                <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Deleniti,
+                    deserunt. Sequi possimus ex sint.</p>
+                <div style="text-align: center;"><button class="btn-change">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./Images/project4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Project Name</h5>
+                <p class="card-text" style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Deleniti,
+                    deserunt. Sequi possimus ex sint.</p>
+                <div style="text-align: center;"><button class="btn-change">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----pricing---->
+
+    <div class="container">
+        <p class="zippyintro"><b>Pricing Table</b></p>
+        <div style="width:800px; margin:50px auto; padding: 10px auto;display: flex; justify-content: space-between;">
+
+            <table>
+
+                <div>
+                    <td>
+                        <h4 style="text-align: center;">Standard Plan</h4>
+                        <h5 class="text-muted" style="text-align: center;">Free</h5>
+                        <div class="icondesc">
+                            <p>2 GB available<br> 15 max contacts<br> 30 messages/month <br>Outgoing ad</p>
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change" style="width: 60px;">Buy</button>
+                        </div>
+                    </td>
+                </div>
+                <div class="vertical1"></div>
+                <div>
+                    <td>
+                        <h4 style="text-align: center;">Business Plan</h4>
+                        <h5 class="text-muted" style="text-align: center;">19$/MONTH</h5>
+                        <div class="icondesc">
+                            <p>10 GB available<br> 75 max contacts<br>90 messages/month <br>Ads Free</p>
+
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change" style="width: 60px;">Buy</button>
+                        </div>
+                    </td>
+                </div>
+                <div class="vertical"></div>
+                <div>
+                    <td>
+                        <h4 style="text-align: center;">Premium Plan</h4>
+                        <h5 class="text-muted" style="text-align: center;">14$/MONTH</h5>
+                        <div class="icondesc">
+                            <p>100 GB available<br>Unlimited contacts<br>Unlimited messages/month<br>Ads Free</p>
+
+                        </div>
+                        <div style="text-align: center;"><button class="btn-change" style="width: 60px;">Buy</button>
+                        </div>
+                    </td>
+                </div>
+            </table>
+
+        </div>
+    </div>
+
+    <!-----video----->
+
+    <div style="background-color: black; padding: 20px auto;">
+        <p class="zippyintro" style="color: white;"><b>Video Projects</b></p>
+        <div>
+            <table>
+                <td>
+                    <video width="320" height="240" controls autoplay>
+                        <source src="Images/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video width="280" height="240" controls autoplay>
+                        <source src="Images/video2.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+
+                </td>
+                <td>
+                    <video width="320" height="240" controls autoplay>
+                        <source src="Images/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video width="280" height="240" controls autoplay>
+                        <source src="Images/video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <!----team---->
+
+    <div class="container">
+        <p class="zippyintro"><b>ZIPPI Team</b></p>
+        <div class="row justify-content-center">
+            <div class="col-4" style=" left: 15%; position: relative; text-align: center;">
+                <img src="./Images/team1.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center;">
+
+                <h6>JEFF THOMAS</h6>
+                <h6 class="text-muted">SENIOR MANAGER</h6>
+            </div>
+            <div class="col-4" style=" left: 3%; position: relative; text-align: center;">
+                <img src="./Images/team2.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center;">
+
+                <h6>SARA JOHNSON</h6>
+                <h6 class="text-muted">ART HEAD</h6>
+            </div>
+            <div class="col-4" style=" right: 10%; position: relative; text-align: center;">
+                <img src="./Images/team3.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center;">
+
+                <h6>CHRIS PHILIPS</h6>
+                <h6 class="text-muted">WEB DEVELOPER</h6>
+            </div>
+            <div class="col-4" style=" left: 15%; position: relative; text-align: center;">
+                <img src="./Images/team4.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center; margin-top: 20px">
+
+                <h6>ALIANA ALEX</h6>
+                <h6 class="text-muted">CREATIVE HEAD</h6>
+            </div>
+            <div class="col-4" style=" left: 3%; position: relative; text-align: center;">
+                <img src="./Images/team5.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center; margin-top: 20px">
+
+                <h6>AURA MCBOOM</h6>
+                <h6 class="text-muted">SEO MANAGER</h6>
+            </div>
+            <div class="col-4" style=" right: 10%; position: relative; margin-top: 20px; text-align: center;">
+                <img src="./Images/team6.jpg" alt="#"
+                    style="border-radius: 50%; width: 100px; height: 100px; text-align: center;">
+
+                <h6>JIMMY SMITH</h6>
+                <h6 class="text-muted">MARKETING MANAGER</h6>
+            </div>
+        </div>
+
+    </div>
+
+    <!----life in zippi---->
+
+    <p class="zippyintro" style="margin-bottom: 15px;"><b>Life in ZIPPI</b></p>
+
+    <div class="container" style="margin:50px auto; position: relative;width: 50%;height: 20%;justify-content: center;">
+        <div class="mySlides">
+            <img src="./Images/life1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./Images/life12.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./Images/life3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./Images/life11.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./Images/life5.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./Images/life1.jpg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/life12.jpg" style="width:100%" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/life3.jpg" style="width:100%" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/life11.jpg" style="width:100%" onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./Images/life5.jpg" style="width:100%" onclick="currentSlide(5)">
+            </div>
+        </div>
+    </div>
+
+    <!----newsletter---->
+
+    <div class="bg-img">
+        <h4 style="visibility: hidden; font-size: 70px;">Newsletter Signup</h4>
+        <div class="bg-text" style="text-align: center; margin-top: 10px;">
+            <h4>Newsletter Signup</h4>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!----blog---->
+
+    <p class="zippyintro"><b>Blog</b></p>
+    <div class="grid-container">
+        <div class="zoom">
+            <img src="./Images/blog1.jpg" alt="" style="height: 100px; width: 160px; text-align: center;">
+            <h6 style="font-size: 12px; text-align: center; font-weight: bold;">Lorem ipsum dolor sit</h6>
+            <h6 class="text-muted">15 Jan 2020</h6>
+            <h6 style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam
+                nesciunt!</h6>
+            <div style="text-align: center;"><button class="btn-change"
+                    style="width: 80px; height:20px;font-size: 10px;">Read
+                    More</button>
+            </div>
+
+        </div>
+        <div class="zoom">
+            <img src="./Images/blog3jpg.jpg" alt="" style="height: 100px; width: 160px; text-align: center;">
+            <h6 style="font-size: 12px; text-align: center; font-weight: bold;">Lorem ipsum dolor sit amet </h6>
+            <h6 class="text-muted">15 Jan 2020</h6>
+            <h6 style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam
+                nesciunt!</h6>
+            <div style="text-align: center;"><button class="btn-change"
+                    style="width: 80px; height:20px;font-size: 10px;">Read
+                    More</button>
+            </div>
+
+        </div>
+        <div class=" zoom">
+            <img src="./Images/blog2.jpg" alt="" style="height: 100px; width: 160px; text-align: center;">
+            <h6 style="font-size: 12px; text-align: center; font-weight: bold;">Lorem ipsum dolor sit amet</h6>
+            <h6 class="text-muted">15 Jan 2020</h6>
+            <h6 style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam
+                nesciunt!</h6>
+            <div style="text-align: center;"><button class="btn-change"
+                    style="width: 80px; height:20px;font-size: 10px;">Read
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!----form---->
+
+    <div class="card-group" style="margin-top: 50px; background-color: #E9E4F0; ">
+        <div class="card" style="pointer-events: none;background-color: #E9E4F0; margin: 0; width: 700px;">
+            <iframe
+                src="
+            https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120976.49935675706!2d73.72210313923398!3d18.640844848118792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8377fbdeab3%3A0x2c4265dab1a7a0f8!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1631757377450!5m2!1sen!2sin"
+                width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div class="card" style="margin: 0;  background-color: #E9E4F0;">
+            <div class="account_page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="form_container">
+                                <div class="form-btn">
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="register()">Register</span>
+                                    <hr id="indicator">
+                                </div>
+                                <form id="loginform">
+                                    <input type="text" placeholder="username">
+                                    <input type="tPassword" placeholder="password">
+                                    <button type="submit" class="btn">Login</button>
+                                    <a href="">Forget password</a>
+                                </form>
+
+                                <form id="registration">
+                                    <input type="text" placeholder="username">
+                                    <input type="email" placeholder="email">
+                                    <input type="password" placeholder="password">
+                                    <input type="password" placeholder=" confirm password">
+                                    <button type="submit" class="btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----follow---->
+
+    <div class="card mb-3  mt-5 mx-auto shadow-lg p-3 mb-5 bg-body rounded " style="opacity: 0.5;">
+        <h5 class="text-center">Follow us
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+            <i class="fab fa-linkedin" style="font-size:24px"></i>
+            <i class="fa fa-facebook-official" style="font-size:24px"></i>
+        </h5>
+    </div>
+
+
+    <!----footer---->
+
+    <footer class=" pt-5 pb-4 bg-dark" style="margin-top: 80px;">
+        <div class="row text-centre">
+            <div class="col">
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-light" href="#">Terms and conditions</a></li>
+                    <li class="mb-1"><a class="link-light" href="#">Privacy policy</a></li>
+                    <li class="mb-1"><a class="link-light" href="#"><i class="fab fa-android"></i> Get our
+                            App</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-light" href="#">Carrers</a></li>
+                    <li class="mb-1"><a class="link-light" href="#">FAQs</a></li>
+                    <li class="mb-1"><a class="link-light" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-light" href="#">Licenses</a></li>
+                    <li class="mb-1"><a class="link-light" href="#">News and update</a></li>
+                    <li class="mb-1"><a class="link-light" href="#">Care guide</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-light" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            Zippi@gmail.com</i>
+                        </a></li>
+                    <li class="mb-1"><a class="link-light" href="#"><img src="./Images/footer.png"
+                                style="height: 50px; width: 80px;"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+
+        var loginform = document.getElementById("loginform");
+        var regform = document.getElementById("registration");
+        var indicator = document.getElementById("indicator")
+
+        function register() {
+            regform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+        function login() {
+            regform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
